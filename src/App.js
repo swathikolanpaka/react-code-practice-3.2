@@ -46,15 +46,12 @@ const App = () => (
       </p>
     </div>
     <ul>
-      <li className="container">
-        <CardItem cardDetail={cardsList[0]} key={cardsList[0].id} />
-        <CardItem cardDetail={cardsList[1]} key={cardsList[1].id} />
-      </li>
-
-      <li className="container">
-        <CardItem cardDetail={cardsList[2]} key={cardsList[2].id} />
-        <CardItem cardDetail={cardsList[3]} key={cardsList[3].id} />
-      </li>
+      <CardItem cardDetail={cardsList[0]} key={cardsList[0].id} />
+      <CardItem cardDetail={cardsList[1]} key={cardsList[1].id} />
+    </ul>
+    <ul>
+      <CardItem cardDetail={cardsList[2]} key={cardsList[2].id} />
+      <CardItem cardDetail={cardsList[3]} key={cardsList[3].id} />
     </ul>
   </div>
 )
