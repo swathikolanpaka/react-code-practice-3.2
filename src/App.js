@@ -38,20 +38,17 @@ const cardsList = [
 
 const App = () => (
   <div className="body">
-    <div>
-      <h1>Learn 4.O Technologies</h1>
-      <p>
-        Get trained by alumni of IIT'S and top Company' like microsoft,amazon
-        etc
-      </p>
-    </div>
+    <h1>Learn 4.O Technologies</h1>
+    <p>
+      Get trained by alumni of IITS and top companies like
+      Amazon,Microsoft,Intel,Nvidia,Qualcomm,etc.Learn directly from
+      professionals involved in Product Development.
+    </p>
+
     <ul>
-      <CardItem cardDetail={cardsList[0]} key={cardsList[0].id} />
-      <CardItem cardDetail={cardsList[1]} key={cardsList[1].id} />
-    </ul>
-    <ul>
-      <CardItem cardDetail={cardsList[2]} key={cardsList[2].id} />
-      <CardItem cardDetail={cardsList[3]} key={cardsList[3].id} />
+      {cardsList.map(eachObject => (
+        <CardItem cardDetails={eachObject} key={eachObject.Id} />
+      ))}
     </ul>
   </div>
 )
